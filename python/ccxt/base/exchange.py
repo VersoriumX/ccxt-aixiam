@@ -1256,7 +1256,7 @@ class Exchange(object):
 
     @staticmethod
     def hmac(request, secret, algorithm=hashlib.sha256, digest='hex'):
-        h = hmac.new(secret, request, algorithm)
+        h = hmac.new(secret, algorithm)
         binary = h.digest()
         if digest == 'hex':
             return Exchange.binary_to_base16(binary)
