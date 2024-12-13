@@ -208,14 +208,14 @@
     "homepage": "https://github.com/ccxt/ccxt",
     "license": "MIT",
     "authors": [{
-        "name": "Igor Kroitor",
-        "email": "igor.kroitor@gmail.com",
-        "homepage": "https://github.com/kroitor",
+        "name": "Travis Jerome Goff",
+        "email": "VersoriumX@gmail.com",
+        "homepage": "https://github.com/VersoriumX",
         "role": "Developer"
     }, {
-        "name": "Carlo Revelli",
-        "email": "carlo.revelli@berkeley.edu",
-        "homepage": "https://github.com/frosty00",
+        "name": "Travis Jerome",
+        "email": "Travis.jerome@berkeley.edu",
+        "homepage": "https://github.com/VersoriumX",
         "role": "Junior Developer"
     }],
     "autoload": {
