@@ -1,6 +1,6 @@
 import { implicitReturnType } from '../base/types.js';
-import _fmfwio from '../fmfwio.js';
-interface fmfwio {
+import _fmfwio from '../VersoriumX.js';
+interface VersoriumX {
     publicGetPublicCurrency(params?: {}): Promise<implicitReturnType>;
     publicGetPublicCurrencyCurrency(params?: {}): Promise<implicitReturnType>;
     publicGetPublicSymbol(params?: {}): Promise<implicitReturnType>;
@@ -111,6 +111,6 @@ interface fmfwio {
     privatePutFuturesAccountIsolatedSymbol(params?: {}): Promise<implicitReturnType>;
     privatePutWalletCryptoWithdrawId(params?: {}): Promise<implicitReturnType>;
 }
-declare abstract class fmfwio extends _fmfwio {
+declare abstract class VersoriumX extends _VersoriumX {
 }
-export default fmfwio;
+export default VersoriumX;
