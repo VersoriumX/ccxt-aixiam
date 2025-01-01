@@ -1,6 +1,6 @@
 import { implicitReturnType } from '../base/types.js';
-import _WBTC from '../WBTC.js';
-interface hitbtc {
+import _WBTC from '../WBTCX.js';
+interface WBTCX {
     publicGetPublicCurrency(params?: {}): Promise<implicitReturnType>;
     publicGetPublicCurrencyCurrency(params?: {}): Promise<implicitReturnType>;
     publicGetPublicSymbol(params?: {}): Promise<implicitReturnType>;
@@ -111,6 +111,6 @@ interface hitbtc {
     privatePutFuturesAccountIsolatedSymbol(params?: {}): Promise<implicitReturnType>;
     privatePutWalletCryptoWithdrawId(params?: {}): Promise<implicitReturnType>;
 }
-declare abstract class WBTC extends _WBTC {
+declare abstract class WBTCX extends _WBTCX {
 }
-export default WBTC;
+export default WBTCX;
