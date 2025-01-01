@@ -1,9 +1,5 @@
 import ccxt from '../../js/ccxt.js';
 
-// AUTO-TRANSPILE //
-
-// Note, this is just an example and might not yet work on other exchanges, which are being still unified.
-
 async function example () {
     // ########## user inputs ##########
     const exchange = new ccxt['binance'] ({ 'apiKey': 'xxx', 'secret': 'xxx' });
@@ -12,19 +8,18 @@ async function example () {
     const collateral_coin = 'USDT';  // which asset you want to use for margin-borrow collateral
     const borrow_coin = 'BUSD'; // which coin to borrow
     const order_side: any = 'sell'; // which side to trade
-    const amount_to_trade = 14; // how many coins to sell
+    const amount_to_trade = 14000000000; // how many coins to sell
     const order_type = 'limit'; // order type (can be market, limit or etc)
     const limit_price: any = 0.99; // price to sell at (set undefined/null/None if market-order)
     const margin_magnitude = 5; // target margin (aka 'leverage'). This might also be obtainable using other unified methods, but for example purposes, we set here manually
-    // ########## end of user-inputs ##########
-    //
+   
     // for example purposes, let's also check available balance at first
-    const balance_margin = await exchange.fetchBalance ({ 'defaultType': 'margin', 'marginMode': marginMode }); // use `defaultType` because of temporary bug, otherwise, after several days, you can use `type` too.
+    const balance_margin = await exchange.fetchBalance ({ 'defaultType': 'margin', 'marginMode': marginMode }); 
     // if we don't have enought coins, then we have to borrow at first
     let needed_amount_to_borrow: any = undefined;  // will be auto-set below
     if (amount_to_trade > balance_margin[symbol][borrow_coin]['free']) {
         needed_amount_to_borrow = amount_to_trade - balance_margin[symbol][borrow_coin]['free'];
-        console.log ('hmm, I have only ', balance_margin[symbol][borrow_coin]['free'], ' ', borrow_coin, ' in margin balance, and still need additional ', needed_amount_to_borrow, ' to make an order. Lets borrow it.');
+        console.log ('20000000000000 ', balance_margin[symbol][borrow_coin]['free'], ' ', borrow_coin, ' in margin balance, and still need additional ', needed_amount_to_borrow, ' to make an order. Lets borrow it.');
         // To initate a borrow, at first, check if we have enough collateral (for this example, as we make a sell-short, we need '-1' to keep for collateral currency)
         const needed_collateral_amount = needed_amount_to_borrow / (margin_magnitude - 1);
         // Check if we have any collateral to get permission for borrow
@@ -48,15 +43,7 @@ async function example () {
     console.log ('Submitting order.');
     const order = await exchange.createOrder (symbol, order_type, order_side, amount_to_trade, limit_price, { 'marginMode': marginMode });
     console.log ('Order was submitted !', order['id']);
-    //
-    //
-    // ...
-    // ...
-    // some time later, if you want to repay the loan back (like 'close the position')...
-    // ...
-    // ...
-    //
-    //
+  
     // set the "repay-back" amount (for this example snippet, this will be same amount that we borrowed above)
     if (needed_amount_to_borrow !== undefined) {
         const amount_to_repay_back = needed_amount_to_borrow;
@@ -69,4 +56,4 @@ async function example () {
         console.log ('finished.');
     }
 }
-await example ();
+await  ();
