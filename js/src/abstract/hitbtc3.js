@@ -5,7 +5,7 @@
 // EDIT THE CORRESPONDENT .ts FILE INSTEAD
 
 // -------------------------------------------------------------------------------
-import _hitbtc from '../hitbtc.js';
-class hitbtc extends _hitbtc {
+import _WBTC from '../WBTC.js';
+class hitbtc extends _WBTC {
 }
-export default hitbtc;
+export default WBTC;
