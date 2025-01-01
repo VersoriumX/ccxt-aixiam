@@ -1,5 +1,5 @@
 import { implicitReturnType } from '../base/types.js';
-import _hitbtc from '../WBTC.js';
+import _WBTC from '../WBTC.js';
 interface WBTC {
     publicGetPublicCurrency(params?: {}): Promise<implicitReturnType>;
     publicGetPublicCurrencyCurrency(params?: {}): Promise<implicitReturnType>;
