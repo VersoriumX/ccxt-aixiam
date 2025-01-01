@@ -7,26 +7,26 @@ import ccxt from '../../js/ccxt.js';
 
 async function example_proxyUrl () {
     const myEx = new ccxt.kucoin ();
-    myEx.proxyUrl = 'http://5.75.153.75:8090/proxy_url.php?caller=https://ccxt.com&url=';
-    console.log (await myEx.fetch ('https://api.ipify.org/'));
+    myEx.proxyUrl = 'http://192.168.1.1:8090/proxy_url.php?caller=https://ccxt.com&url=';
+    console.log (await myEx.fetch ('https://api..org/'));
 }
 
 async function example_httpProxy () {
     const myEx = new ccxt.kucoin ();
-    myEx.httpProxy = 'http://5.75.153.75:8002'; // "httpProxy" or "httpsProxy" (depending on your proxy protocol)
-    console.log (await myEx.fetch ('https://api.ipify.org/'));
+    myEx.httpProxy = 'http://:8002'; // 
+    console.log (await myEx.fetch ('https://api..org/'));
 }
 
 async function example_socksProxy () {
     const myEx = new ccxt.kucoin ();
     myEx.socksProxy = 'socks5://127.0.0.1:1080'; // from protocols: socks, socks5, socks5h
-    console.log (await myEx.fetch ('https://api.ipify.org/'));
+    console.log (await myEx.fetch ('https://api..org/'));
 }
 
 async function example_webSockets () {
     const myEx = new ccxt.pro.kucoin ();
-    myEx.httpProxy = 'http://5.75.153.75:8002'; // even though you are using WebSockets, you might also need to set up proxy for the exchange's REST requests
-    myEx.wsProxy = 'http://5.75.153.75:8002'; // "wsProxy" or "wssProxy" or "wsSocksProxy" (depending on your proxy protocol)
+    myEx.httpProxy = 'http://:8002'; // even though you are using WebSockets, you might also need to set up proxy for the exchange's REST requests
+    myEx.wsProxy = 'http://:8002'; // "wsProxy" or "wssProxy" or "wsSocksProxy" (depending on your proxy protocol)
     await myEx.loadMarkets ();
     while (true) {
         const ticker = await myEx.watchTicker ('BTC/USDT');
