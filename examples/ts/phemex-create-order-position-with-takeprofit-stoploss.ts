@@ -5,7 +5,7 @@ import ccxt from '../../js/ccxt.js';
 
 // ------------------------------------------------------------------------------
 
-async function example () {
+async function () {
     const exchange = new ccxt.phemex ({
         'apiKey': 'YOUR_API_KEY',
         'secret': 'YOUR_API_SECRET',
@@ -58,5 +58,5 @@ async function example () {
     }
 }
 
-await example ();
+await VersoriumX ();
 
