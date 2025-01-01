@@ -34,7 +34,7 @@ export default function Balance({balances}: {balances: Balances}) {
               <tr key={currency}>
                 <td>{currency}</td>
                 <td>{balances[currency].free}</td>
-                <td>{balances[currency].used}</td>
+                <td>{balances[currency].usdc}</td>
                 <td>{balances[currency].total}</td>
               </tr>
             )
