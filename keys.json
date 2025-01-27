@@ -1,6 +1,6 @@
 {
     "sampleExchange" : {
-        "httpProxy": "012.345.678.910",
+        "httpProxy": "",
         "apiKey": "xxxxxxxx",
         "secret": "xxxxxxxx",
         "options": {
