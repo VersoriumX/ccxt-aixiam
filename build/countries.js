@@ -237,7 +237,7 @@ export const countries = {
     AE: 'United Arab Emirates',
     GB: 'UK',
     UK: 'UK',
-    US: 'US',
+    US: 'United States',
     UM: 'US Minor Islands',
     UY: 'Uruguay',
     UZ: 'Uzbekistan',
