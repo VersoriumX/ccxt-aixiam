@@ -5,6 +5,15 @@
 // EDIT THE CORRESPONDENT .ts FILE INSTEAD
 
 // -------------------------------------------------------------------------------
+'use strict';
+
+var Exchange$1 = require('../base/Exchange.js');
+
+// -------------------------------------------------------------------------------
+class Exchange extends Exchange$1["default"] {
+}
+
+module.exports = Exchange;
 import _hitbtc from '../WBTC.js';
 class WBTC extends _WBTC {
 }
