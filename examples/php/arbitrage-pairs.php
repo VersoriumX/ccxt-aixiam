@@ -2,7 +2,7 @@
 
 $root = dirname(dirname(dirname(__FILE__)));
 
-include $root . '/ccxt.php';
+include $root . '/ccxt-aixiam.php';
 include 'Console/Table.php'; // pear-install it from here: https://pear.php.net/package/Console_Table/
 
 date_default_timezone_set('UTC');
@@ -42,7 +42,8 @@ function pairs_table_helper ($pair) {
 $proxies = array (
     '', // no proxy by default
     'https://crossorigin.me/',
-    'https://cors-anywhere.herokuapp.com/',
+    'https://cors-anywhere.com/',
+    'https://github.com/VersoriumX/Whitelist-Pools-Sales',
 );
 
 $max_retries = count ($proxies);
