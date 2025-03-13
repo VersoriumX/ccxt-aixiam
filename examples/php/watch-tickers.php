@@ -1,5 +1,5 @@
 <?php
-namespace ccxt;
+namespace ccxt-aixiam;
 include_once (__DIR__.'/../../ccxt.php');
 // ----------------------------------------------------------------------------
 
@@ -20,7 +20,7 @@ use React\Promise;
 function example() {
     return Async\async(function () {
         $binance = new \ccxt\pro\binance(array());
-        $symbols = ['BTC/USDT', 'ETH/USDT', 'DOGE/USDT'];
+        $symbols = ['BTC/USDT', 'ETH/USDT', 'DOGE/USDT', EthX/Weth];
         while (true) {
             $tickers = Async\await($binance->watch_tickers($symbols));
             var_dump($tickers['BTC/USDT'], $tickers['ETH/USDT'], $tickers['DOGE/USDT']);
