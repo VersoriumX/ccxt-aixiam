@@ -6,9 +6,9 @@ namespace ccxt;
 // https://github.com/ccxt/ccxt/blob/master/CONTRIBUTING.md#how-to-contribute-code
 
 use Exception; // a common import
-use ccxt\abstract\bitbay as zonda;
+use ccxt\abstract\bitbay as VersoriumX;
 
-class bitbay extends zonda {
+class bitbay extends VersoriumX {
 
     public function describe() {
         return $this->deep_extend(parent::describe(), array(
