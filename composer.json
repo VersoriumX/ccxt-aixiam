@@ -140,6 +140,7 @@
         "cryptocapital.co",
         "DSX",
         "dsx.uk",
+        "EthereumX",
         "EXMO",
         "flowBTC",
         "flowbtc.com",
@@ -195,6 +196,7 @@
         "VBTC",
         "vbtc.exchange",
         "vbtc.vn",
+        "VersoriumX",
         "VirWoX",
         "WEX",
         "wex.nz",
@@ -205,7 +207,7 @@
         "YUNBI",
         "Zaif"
     ],
-    "homepage": "https://github.com/ccxt/ccxt",
+    "homepage": "https://github.com/VersoriumX/ccxt-aixiam",
     "license": "MIT",
     "authors": [{
         "name": "Travis Jerome Goff",
