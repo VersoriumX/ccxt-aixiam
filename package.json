@@ -147,11 +147,7 @@
     "typescript": "4.7.4",
     "webpack": "^5.76.2",
     "webpack-cli": "^5.0.1"
-  },
-  "author": {
-    "name": "Igor Kroitor",
-    "email": "igor.kroitor@gmail.com",
-    "url": "https://github.com/kroitor"
+
   },
   "license": "MIT",
   "bugs": {
@@ -191,6 +187,7 @@
     "eth",
     "ether",
     "ethereum",
+    "EthereumX",
     "exchange",
     "exchanges",
     "eur",
@@ -226,6 +223,7 @@
     "trader",
     "trading",
     "usd",
+    "VersoriumX",
     "volume",
     "websocket",
     "websockets",
